@@ -1,0 +1,324 @@
+<html>
+	
+	<head>
+		<title>Bootstrap on Fresco (Practice) - Linus Castelino </title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+		<style>
+			div.row{
+			border-width: 5px;
+			border-color: cadetblue;
+			border-style: double; 
+			padding:40px;}
+		</style>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		
+	</head>
+
+	<body>
+	
+		<nav class="navbar navbar-default">
+			<div class="navbar-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Bootstrap Practice</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Page 1</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 2 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Page 2-1</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Page 2-2</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Page 2-3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Page 3</a></li>
+					<li><a href="#">Page 4</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<h1 class="text-center"> I am Heading H1</h1>
+		<h2 class="text-center"> I am Heading H2</h2>
+		<h3 class="text-center"> I am Heading H3</h3>
+		<h4 class="text-center"> I am Heading H4  <small> I am a sub-heading of H4 </small></h4>
+		<h5 class="text-center"> I am Heading H5</h5>
+		<h6 class="text-center"> I am Heading H6</h6>
+		
+		<div class="container" style="border-width: 5px;border-color: aqua;border-style: groove; padding:40px;">
+			<div class="row">
+				<div class="col-lg-4" style="border-width: 5px;border-color: aqua;border-style: groove; padding:40px;">
+					Bootstrap unordered list
+					<ul type="square">
+						<li>Option 1</li>
+						<li>Option 2</li>
+						<li>Option 3</li>
+					</ul>
+				</div>
+				<div class="col-lg-4" style="border-width: 5px;border-color: aqua;border-style: groove; padding:40px;">
+					Bootstrap ordered list
+					<ol>
+						<li>Option 1</li>
+						<li>Option 2</li>
+						<li>Option 3</li>
+					</ol>
+				</div>
+				<div class="col-lg-4" style="border-width: 5px;border-color: aqua;border-style: groove; padding:40px;">
+					Bootstrap definition list
+					<dl>
+						<dt>ATG</dt> - <dd>E-Commerce Framework</dd>
+					</dl>
+				</div>
+			</div>
+			
+			<div class="row" >
+				<div class="col-lg-12" style="border-width: 5px;border-color: aqua;border-style: groove; padding:40px;">
+					<div class="dropup text-center">
+						<p class="dropdown-toggle" data-toggle="dropdown">Menu Options<span class="caret"></span></p>
+						<ul class="dropdown-menu">
+							<li>Option 1</li>
+							<li class="divider"></li>
+							<li>Option 2</li>
+							<li class="divider"></li>
+							<li>Option 3</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row" >
+				<div class="col-lg-12 text-center" style="border-width: 5px;border-color: aqua;border-style: groove; padding:40px;">
+					Glyphicons <br />
+					<span class="glyphicon glyphicon-search"></span> <br />
+					<span class="glyphicon glyphicon-refresh"></span> <br />
+					<span class="glyphicon glyphicon-plus"></span> <br />
+					<span class="glyphicon glyphicon-volume-up"></span> <br /> 
+					<span class="glyphicon glyphicon-tint"></span> <br />
+					<span class=""></span>
+				</div>
+				
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary">Split Dropdown</button>
+					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+						Nested Button Group with Dropdown<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href=" # ">Option 1</a></li>
+						<li><a href=" # ">Option 2</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row">
+				<form class="form-inline">
+					<div class="form-group">
+						<label class="sr-only">Email</label>
+						<input type="text" class="form-control" placeholder="Email">
+						<label class="sr-only">Password</label>
+						<input type="text" class="form-control" placeholder="Password">
+						<label><input type="checkbox">Remember Me</label>
+						<button type="submit" class="btn btn-default">Submit</input>
+					</div>
+				</form>
+				
+				<hr>
+				
+				<form>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="text" class="form-control" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<input type="text" class="form-control" placeholder="Password">
+					</div>
+					<label><input type="checkbox">Remember Me</label> <br />
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+				
+				<hr>
+				
+				<div class="input-group col-xs-4">
+					<span class="input-group-addon">$</span>
+					<input type="text" class="form-control" placeholder="Amount" aria-label="Amount (to the nearest dollar)" />
+					<span class="input-group-addon">.00</span>
+				</div>
+				
+				<hr>
+				
+				<div class="input-group">
+					<span class="input-group-addon">Search text</span>
+					<input type="text" class="form-control" aria-label="Search parameter" />
+					<span class="input-group-btn">
+						<button class="btn btn-secondary" type="button">
+							<span class="glyphicon glyphicon-search"></span> <br />
+						</button>
+					</span>
+				</div>
+				
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-2">
+					<span class="label label-default">Default Label</sapn>
+				</div>
+				<div class="col-lg-2">
+					<span class="label label-danger">Danger Label</sapn>
+				</div>
+				<div class="col-lg-2">
+					<span class="label label-warning">Warning Label</sapn>
+				</div>
+				<div class="col-lg-2">
+					<span class="label label-info">Info Label</sapn>
+				</div>
+				<div class="col-lg-2">
+					<span class="label label-success">Success Label</sapn>
+				</div>
+				<div class="col-lg-2">
+					<span class="label label-primary">Primary Label</sapn>
+				</div>
+			</div>
+	
+			<div class="row">
+				<div class="container">
+					<h2>Normal Text</h2>
+					<p>This is a normal text to compare with Jumbotron</p>
+				</div>
+				
+				<hr>
+				
+				<div class="jumbotron">
+					<div class="container">
+						<h2>Normal Text</h2>
+						<p>This is a normal text to compare with Jumbotron</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-6">
+					<p>Normal image </p>
+					<img src="C:\Users\Public\Pictures\Sample Pictures\Koala.jpg" style="width:100%;height:100%" alt="Koala image" title="Koala image">
+				</div>
+								
+				<div class="col-lg-6">
+					<p>Image with Bootstrap Thumbnail</p>
+					<a href="#" class="thumbnail">
+						<img src="C:\Users\Public\Pictures\Sample Pictures\Koala.jpg" alt="Koala image" title="Koala image">
+					</a>
+					<br><br><br>
+					<a href = "#" data-toggle = "tooltip"  data-placement="top" title = "Example tooltip" >Hover over me</a>
+					<a href = "#Popover" id="Popover" data-toggle = "popover" data-placement="right" title = "Example popover" data-content="Some content inside the popover">Click me</a>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-3">
+					<div class = "alert alert-success text-center">Success!</div> 
+				</div>
+				
+				<div class="col-sm-3">
+					<div class = "alert alert-info text-center">Important Info!</div>
+				</div>
+				
+				<div class="col-sm-3">
+					<div class = "alert alert-warning text-center">Warning!</div>
+				</div>
+				
+				<div class="col-sm-3">
+					<div class = "alert alert-danger text-center">Error!</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="panel pannel-default">
+					<div class="panel-body">
+						This is a basic panel.
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:100%;height:400px;color:#FFFFFF;background:#000000">
+					<ol class="carousel-indicators" style="background:#AAAAAA">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+					</ol>
+					
+					<div class="carousel-inner text-center">
+						<div class="item active">
+							<img class="d-block img-fluid" src="C:\Users\Public\Pictures\Sample Pictures\Koala.jpg" alt="Example image 1" style="width:100%;height:400px">
+							<div class="carousel-caption">
+								<h5>Carousel Caption Heading</h5>
+								<p>Carousel caption text</p>
+							</div>
+						</div>
+						
+						<div class="item">
+							<img class="d-block img-fluid" src="..." alt="Example image 2">
+						</div>
+						
+						<div class="item">
+							<img class="d-block img-fluid" src="..." alt="Example image 3">
+						</div>
+						
+						<div class="item">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/qIULMnbH2-o" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+					
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					
+					<a href="#myCarousel" class="right carousel-control" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+					
+				</div>
+			</div>
+
+			
+			<div class="row">
+				<div class="media">
+					<div class="media-left">
+						<img src="..." alt="Media img" class="media-object" style="width:60px">
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Left Media Heading</h4>
+						<p>Media text/para/comment</p>
+					</div>
+				</div>
+				
+				<hr>
+					
+				<div class="media">
+					<div class="media-body">
+						<h4 class="media-heading">Right Media Heading</h4>
+						<p>Media text/para/comment</p>
+					</div>
+					<div class="media-right">
+						<img src="..." alt="Media img" class="media-object" style="width:60px">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+	
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="popover"]').popover();
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+	
+</html>
