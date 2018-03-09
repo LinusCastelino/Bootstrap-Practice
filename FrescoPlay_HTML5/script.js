@@ -76,3 +76,19 @@ draw = function(){
 	animate('down');
 }
 
+
+//html5 Geolocation API
+function displayLocationDetails(){
+	var captureLocProps = function(locationProperties){
+		var locDetails = document.getElementById("locDetails");
+		locDetails.innerHTML = "Current location details - " + "<br/>";
+		locDetails.append("Latitude : "+ locationProperties.coords.latitude);
+		locDetails.append(document.createElement("br"));
+		locDetails.append("Longitude : "+ locationProperties.coords.longitude);
+		locDetails.append(document.createElement("br"));
+		locDetails.append("Timestamp : "+ locationProperties.timestamp);
+
+	}
+
+	navigator.geolocation.getCurrentPosition(captureLocProps);	
+}

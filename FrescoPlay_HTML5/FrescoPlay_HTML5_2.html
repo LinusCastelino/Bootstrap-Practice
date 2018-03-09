@@ -19,6 +19,7 @@
 				console.log("Modernizr.canvas = "+ Modernizr.canvas +"\nCanvas tag is supported by this browser");
 				window.onload = draw;
 			}
+
 		</script>
 
 	</head>
@@ -28,5 +29,18 @@
 		<canvas id="canvas1" width="1200px" height="500px">
 			Please upgrade your browser. <!-- This comment will show up if the browser does not support HTMLM5 canvas. -->
 		</canvas>
+
+		<div id="locDetails" class="geoLocationBox" />
+			
 	</body>
+
+	<script>
+		if('geolocation' in navigator){
+			displayLocationDetails();
+		}
+		else{
+			var locDetails = document.getElementById("locDetails");
+			locDetails.innerHTML = "Please upgrade your browser!";
+		}
+	</script>
 </html>
