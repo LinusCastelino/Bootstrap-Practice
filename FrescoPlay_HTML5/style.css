@@ -1,0 +1,12 @@
+h1{
+	margin: 20px;
+	font-style: helvetica;
+	font-size: 64px;
+	color:  #FFFFAB
+}
+
+#canvas1{
+	margin: 20px;
+	background: #FFFFFF;
+	border: 5px solid black;
+}
