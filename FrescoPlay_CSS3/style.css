@@ -1,0 +1,52 @@
+#flipCards{
+	width: 240px;
+	height: 240px;
+	margin: 20px;
+	border-radius: 20px;
+}
+
+#front{
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	background-color: #e580ff;
+	transform: rotateY(0deg);
+	backface-visibility: hidden;
+	transition: transform 2s linear 0s;
+
+	/* For non supporting browsers*/
+	-webkit-transform: rotateY(0deg);
+	-webkit-backface-visibility: hidden;
+	transition: -webkit-transform 2s linear 0s;
+}
+
+#back{
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	background-color: #80ffaa;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	transition: transform 2s linear 0s;
+
+	/* For non supporting browsers*/
+	-webkit-transform: rotateY(180deg);
+	-webkit-backface-visibility: hidden;
+	transition: -webkit-transform 2s linear 0s;
+}
+
+.content {
+	text-align: center;
+	margin-top: 35%;
+	font-family: 'Courier New';
+}
+
+#flipCards:hover > #front{
+	transform: rotateY(-180deg);
+}
+
+#flipCards:hover > #back{
+	transform: rotateY(0deg);
+}
