@@ -1,52 +1,77 @@
-#flipCards{
+.flipCard{
 	width: 240px;
 	height: 240px;
 	margin: 20px;
 	border-radius: 20px;
+	float:left;
+	background:#ccf2ff;
 }
 
-#front{
+.front{
 	position: absolute;
 	width: inherit;
 	height: inherit;
 	border-radius: inherit;
 	background-color: #e580ff;
-	transform: rotateY(0deg);
+	border: 4px solid #cc00ff;
 	backface-visibility: hidden;
 	transition: transform 2s linear 0s;
-
+	
 	/* For non supporting browsers*/
-	-webkit-transform: rotateY(0deg);
 	-webkit-backface-visibility: hidden;
 	transition: -webkit-transform 2s linear 0s;
 }
 
-#back{
+#front1{
+	transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+}
+
+#front2{
+	transform: rotateX(0deg);
+	-webkit-transform: rotateX(0deg);
+}
+
+.back{
 	position: absolute;
 	width: inherit;
 	height: inherit;
 	border-radius: inherit;
 	background-color: #80ffaa;
-	transform: rotateY(180deg);
+	border: 4px solid #00e64d;
 	backface-visibility: hidden;
 	transition: transform 2s linear 0s;
-
-	/* For non supporting browsers*/
-	-webkit-transform: rotateY(180deg);
+	
 	-webkit-backface-visibility: hidden;
 	transition: -webkit-transform 2s linear 0s;
+}
+
+#back1{
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+}
+
+#back2{
+	transform: rotateX(180deg);
+	-webkit-transform: rotateX(180deg);
 }
 
 .content {
 	text-align: center;
 	margin-top: 35%;
+	margin-left: 10%;
+	margin-right: 10%;
 	font-family: 'Courier New';
 }
 
-#flipCards:hover > #front{
+#flipCard1:hover > #front1{
 	transform: rotateY(-180deg);
+	-webkit-transform: rotateY(-180deg);
 }
 
-#flipCards:hover > #back{
+#flipCard1:hover > #back1{
 	transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
 }
+
+

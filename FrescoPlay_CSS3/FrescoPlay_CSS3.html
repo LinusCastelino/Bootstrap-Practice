@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<title>Freso Play - CSS3 Handson</title>
 		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
 	</head>
 
 	<body>
@@ -15,12 +16,21 @@
 
 
 		<!-- 3D flipping in CSS3 -->
-		<div id="flipCards" class="flipCards">
-			<div id="back">
+		<div id="flipCard1" class="flipCard">
+			<div id="back1" class="back">
 				<p id="backContent" class="content">This is the back content. Hover out to flip to the front.</p>
 			</div>
-			<div id="front">
+			<div id="front1" class="front">
 				<p id="frontContent" class="content"> This is the front content. Hover to flip this card.</p>
+			</div>
+		</div>
+		
+		<div id="flipCard2" class="flipCard" >
+			<div id="back2" class="back" onclick="flipToFront()">
+				<p id="backContent" class="content">Single click me to flip to front</p>
+			</div>
+			<div id="front2" class="front" ondblclick="flipToBack()">
+				<p id="frontContent" class="content">Double click me to flip to back.</p>
 			</div>
 		</div>
 
