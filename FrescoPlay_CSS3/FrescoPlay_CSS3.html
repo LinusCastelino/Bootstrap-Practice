@@ -9,31 +9,36 @@
 	</head>
 
 	<body>
-		
-
+	
 		<!-- 2D Transforms in CSS3 -->
+		<div id="transformDiv">
+		</div>
+		
+		
+		<hr>
 
 
 
 		<!-- 3D flipping in CSS3 -->
-		<div id="flipCard1" class="flipCard">
-			<div id="back1" class="back">
-				<p id="backContent" class="content">This is the back content. Hover out to flip to the front.</p>
+		<div id="flipCards">
+			<div id="flipCard1" class="flipCard">
+				<div id="back1" class="back">
+					<p id="backContent" class="content">This is the back content. Hover out to flip to the front.</p>
+				</div>
+				<div id="front1" class="front">
+					<p id="frontContent" class="content"> This is the front content. Hover to flip this card.</p>
+				</div>
 			</div>
-			<div id="front1" class="front">
-				<p id="frontContent" class="content"> This is the front content. Hover to flip this card.</p>
+			
+			<div id="flipCard2" class="flipCard" >
+				<div id="back2" class="back" onclick="flipToFront()">
+					<p id="backContent" class="content">Single click me to flip to front</p>
+				</div>
+				<div id="front2" class="front" ondblclick="flipToBack()">
+					<p id="frontContent" class="content">Double click me to flip to back.</p>
+				</div>
 			</div>
 		</div>
-		
-		<div id="flipCard2" class="flipCard" >
-			<div id="back2" class="back" onclick="flipToFront()">
-				<p id="backContent" class="content">Single click me to flip to front</p>
-			</div>
-			<div id="front2" class="front" ondblclick="flipToBack()">
-				<p id="frontContent" class="content">Double click me to flip to back.</p>
-			</div>
-		</div>
-
 
 	</body>
 </html>
