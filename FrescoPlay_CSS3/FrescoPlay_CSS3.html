@@ -14,10 +14,7 @@
 		<div id="transformDiv">
 		</div>
 		
-		
 		<hr>
-
-
 
 		<!-- 3D flipping in CSS3 -->
 		<div id="flipCards">
@@ -39,6 +36,43 @@
 				</div>
 			</div>
 		</div>
+		
+		<hr>
+		
+		<!-- CSS3 selectors -->
+		<div id="responsiveDiv">
+			<p>Click over the <u><span id="activeSpan">underlined content</span></u> to activate the active CSS property.</p>
+		</div>
+		
+		<hr>
+		
+		Empty selector:
+		<div id="emptySelectorTest"></div>
 
+		<hr>
+		
+		<div id="gridDiv">
+			<script>
+				var result = "";
+				var randomText = "random text ";
+				generateText = function(limit){
+					for(var i=0; i<limit; i++)
+						result += randomText;
+						return  result;
+					}
+					
+			</script>
+			<div>1. <script>document.write(generateText(50));</script></div>
+			<div>2. <script>document.write(generateText(100));</script> </div>
+			<div>3. <script>document.write(generateText(20));</script> </div>
+			<div>4. <script>document.write(generateText(60));</script> </div>
+			<div>5. <script>document.write(generateText(14));</script> </div>
+			<div>6. <script>document.write(generateText(77));</script> </div>
+			<div>7. <script>document.write(generateText(5));</script> </div>
+			<div>9. <script>document.write(generateText(90));</script> </div>
+			<div>10. <script>document.write(generateText(40));</script> </div>
+			<div>11. <script>document.write(generateText(60));</script> </div>
+		</div>
+		
 	</body>
 </html>

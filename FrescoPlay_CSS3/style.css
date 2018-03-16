@@ -11,7 +11,7 @@
 #flipCards{
 	width: 560px;
 	height: 300px;
-	position:absolute;
+	position:relative;
 	top:0;
 	left:0;
 	bottom:0;
@@ -95,4 +95,60 @@
 	-webkit-transform: rotateY(0deg);
 }
 
+#responsiveDiv{
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
+}
 
+#responsiveDiv > p{
+	position: relative;
+	padding-top:40px;    /* to avoid the known margin collapse issue */
+	text-align:center;
+}
+
+@media screen and (min-width: 0px){
+	#responsiveDiv{
+		width: 300px;
+		height: 100px;
+		background-color: #ffb3ff;
+	}
+}
+
+@media screen and (min-width: 600px){
+	#responsiveDiv{
+		width: 500px;
+		height: 100px;
+		background-color: #80d4ff;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	#responsiveDiv{
+		width: 800px;
+		height: 100px;
+		background-color: #99ff99;
+	}
+}
+
+#activeSpan:active{
+	font-size: 2rem;
+}
+
+#emptySelectorTest:empty{
+	background:black;
+	width: 100px;
+	height: 100px;
+}
+
+#gridDiv{
+	column-count: 3;
+}
+
+#gridDiv > div{
+	margin : 10px;
+	padding: 10px;
+	background-color : #b3d1ff;
+	border: 1px solid;
+}
