@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Simple Calculator</title>
+	<style>
+		#screen{
+			text-align: center;
+		}
+		input{
+			width:22%;
+		}
+	</style>
+</head>
+
+<body>
+    <form name="myform">
+        <table border="2">
+            <tr>
+                <td align="center">
+                    <input type="text" id="screen" name="screen" style="width:99%" value="0" disabled="true"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="7" value="7" onclick="update(7)" />
+                    <input type="button" name="8" value="8" onclick="update(8)" />
+                    <input type="button" name="9" value="9" onclick="update(9)" />
+                    <input type="button" name="+" value="+" onclick="update('+')" />
+                    <br>
+                    <input type="button" name="4" value="4" onclick="update(4)" />
+                    <input type="button" name="5" value="5" onclick="update(5)" />
+                    <input type="button" name="6" value="6" onclick="update(6)" />
+                    <input type="button" name="-" value="-" onclick="update('-')" />
+                    <br>
+                    <input type="button" name="1" value="1" onclick="update(1)" />
+                    <input type="button" name="2" value="2" onclick="update(2)" />
+                    <input type="button" name="3" value="3" onclick="update(3)" />
+                    <input type="button" name="*" value="*" onclick="update('*')" />
+                    <br>
+                    <input type="button" name="c" value="c" onclick="resetIP()" />
+                    <input type="button" name="0" value="0" onclick="update(0)" />
+                    <input type="button" name="=" value="=" onclick="result()" />
+                    <input type="button" name="/" value="/" onclick="update('/')" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script type="text/javascript" src="index1.js"></script>
+</body>
+
+</html>
